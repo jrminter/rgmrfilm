@@ -1,0 +1,24 @@
+Package: rgmrfilm
+Title: Processing of data from GMRFILM simulations using R
+Version: 0.0.0.9001
+Authors@R: person("Minter", "John", email= "jrminter@gmail.com", role = c("aut", "cre"))
+Maintainer: John Minter <jrminter@gmail.com>
+Description: Process GMRFILM output using R
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/jrminter/rgmrfilm
+BugReports: https://github.com/jrminter/rgmrfilm/issues
+Encoding: UTF-8
+Depends:
+    R (>= 3.3.0),
+    ggplot2,
+    pander,
+    scales,
+    dplyr,
+    tibble
+Suggests:
+    knitr,
+    rmarkdown,
+    here
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0

@@ -1,0 +1,72 @@
+ Print primary and secondary x-ray intensity data (def=N)? 
+ This is a film (F) or bulk (B) analysis (def.=F)? 
+ Include continuum fluorescence correction? 
+ Note: Not recommended for Bastin Scanning'86 (B)
+ or Packwood (P) phi(z) models (def.=Y)--> 
+
+ To calculate k-ratios    enter 'K' or 'k'; 
+ To calculate compositions enter 'C' or 'c' (def=C): 
+ Observe or change mass absorption coefficients (n)? 
+ Enter take-off angle (default=40 degrees) : 
++Choices of phi(rz) models are :
+
+     Bastin's    Scanning   (1986)     (b) 
+        "        Scanning  (1990)      (c) 
+ Pouchou, Pichoir (PAP) Scanning (1990 (e)
+ or  Packwood's  MAS        (1986)     (p)  
+                            Choose (default=e) : 
+ Is this a one condition (voltage) analysis (y)? 
+ Enter the beam voltage (Eo) in kV (def.=15): 
+
+
++Number of layers (count substrate as 1) : 
++Number of elements in layer 1       : 
++Number of elements in the substrate : 
+ Enter elements, x-ray lines, options. (e.g. FeKa,c)
+ Symbol, x-ray for layer 1    element 1 : 
++Symbol, x-ray for layer 1    element 2 : 
++Symbol, x-ray for substrate  element 1 : 
+ 
+ 
+ Layer densities are used solely to convert thicknesses
+ in ug/cm^2 to Angstroms; they have no effect on the results.
+ 
+ 
++Approximate layer 1 density (gm/cm^3): 
++Enter fixed thicknesses in Angstroms (a) or ug/cm**2 (u), (def=a): 
++Layer 1 fixed thickness (Angstroms): 
+ Enter the fixed composition of layer 1 by 
+ weight fractions (w) or by atomic formula (def=a) : 
++Atomic formula of layer 1    element Ti : 
++Atomic formula of layer 1    element O  : 
+ 
+
+
+
+ GMR Electron Probe Thin Film Microanalysis   File:FI180902.U31     2-Sep-18
+ ===========================================================================
+
+ Analysis # 1 at 15.0kV; Pouchou,Pichoir's Scanning (1990) Model;   iter.= 0 
+ Continuum Correction Included
+ 
+ Layer 1  :  Ti;Ka , O ;Ka                                                   
+ Substrate:  Ti;Ka                                                           
+ 
+
+                 Composition       Thickness          K-ratio      Fchar Fcont
+               Weight%  Atom%  ug/cm**2 Angstrom  Cmp.Std Pure El    %     %
+               =======  =====  ======== ========  ======= =======  ===== =====
+ layer 1   Ti:  59.95   33.33     1.355   ------  ------- 0.00365   0.00 -1.52
+ layer 1   O :  40.05   66.67     0.905   ------  ------- 0.00248   0.00  0.00
+ sum         : 100.00  100.00     2.260     50.0
+
+ substrate Ti: 100.00  100.00   -------   ------  ------- 0.98971   0.00 -0.34
+ sum         : 100.00  100.00
+
+ 
+ See file 'help4.dat' for explanation of 'Fchar' and 'Fcont'.
+
+ Another calculation? (y): 
+ Change Eo (E), Model (M), and/or Remove Continuum correction (R); 
+ Enter any combination (examples:  M  rm  REM ); otherwise <CR> : 
+ New Specimen? (n=exit): 
