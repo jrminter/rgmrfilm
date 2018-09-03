@@ -1,5 +1,8 @@
-# rpenepma
-A package to process output from PENEPMA using R
+# rgmrfilm
+
+A package to process output from GMRFILM models with R
+
+**Warning** This is a work in progress and is **not ready for use.**
 
 ## How to install and use
 
@@ -29,31 +32,10 @@ from the R terminal in RStudio.
 ```
 install.packages("devtools", dependencies=TRUE)
 install.packages("ggplot2", dependencies=TRUE)
-install.packages("ramify", dependencies=TRUE)
-install.packages("scales", dependencies=TRUE)
 ```
 
-Then you can use the `devtools` package to install `rpenepma`. 
+Then you can use the `devtools` package to install `rgmrfilm`. 
 
 ```
-devtools::install_github("jrminter/rpenepma")
+devtools::install_github("jrminter/rgmrfilm")
 ```
-
-There are a couple of vignettes that show how to use the package.
-You can view them by:
-
-```
-browseVignettes(package="rpenepma")
-```
-
-You can get help by typing
-
-```
-?penepma_plot_spectrum
-?penepma_plot_spectrun_logy
-?penepma_to_msa
-?calculate_penepma_z_shifts
-```
-
-
-
