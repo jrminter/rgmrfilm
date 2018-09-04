@@ -4,15 +4,19 @@
 \alias{extract_result_table}
 \title{Extract the results table from GMRFILM output}
 \usage{
-extract_result_table(sim_dir, sim_fi, skip_top, n_rows, verbose = FALSE)
+extract_result_table(sim_dir, sim_fi, raw_ext, out_ext, skip_top, n_rows,
+  verbose = FALSE)
 }
 \arguments{
 \item{sim_dir}{A string. The path to the simulation directory.
 Example: here()}
 
 \item{sim_fi}{A string. The base file name of the GMRFILM output
-that was piped to a file. Example: "case-50a". The
-function appends '.out'}
+that was piped to a file. Example: "tio2-1000a-on-ti".}
+
+\item{raw_ext}{A string for the raw extension. Example: ".dat"}
+
+\item{out_ext}{A string for the out extension. Example: "-out.dat"}
 
 \item{skip_top}{An integer. The number of rows when reading in the
 raw output from the .out file. Example: 55. You want

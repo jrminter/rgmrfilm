@@ -1,11 +1,14 @@
 #' Extract the results table from GMRFILM output
 #'
-#' @param sim_dir A string. The path to the simulation directory.
-#'                    Example: here()
+#' @param sim_dir  A string. The path to the simulation directory.
+#'                 Example: here()
 #'
-#' @param sim_fi  A string. The base file name of the GMRFILM output
-#'                that was piped to a file. Example: "case-50a". The
-#'                function appends '.out'
+#' @param sim_fi   A string. The base file name of the GMRFILM output
+#'                 that was piped to a file. Example: "tio2-1000a-on-ti".
+#'
+#' @param raw_ext  A string for the raw extension. Example: ".dat"
+#' 
+#' @param out_ext  A string for the out extension. Example: "-out.dat"
 #'
 #' @param skip_top An integer. The number of rows when reading in the
 #'                 raw output from the .out file. Example: 55. You want
@@ -28,11 +31,12 @@
 #' # to be added
 
 extract_result_table <- function(sim_dir, sim_fi,
+                                 raw_ext, out_ext,
                                  skip_top, n_rows,
                                  verbose=FALSE){
   # generate the file paths
-  in_fi <- sprintf("%s/%s.out", sim_dir, sim_fi)
-  ou_fi <- sprintf("%s/%s-ext.txt", sim_dir, sim_fi)
+  in_fi <- sprintf("%s/%s%s", sim_dir, sim_fi, raw_ext)
+  ou_fi <- sprintf("%s/%s%s", sim_dir, sim_fi, out_ext)
   # read the data and keep the lines from the table
   lines <- readLines(in_fi)
   lines <- lines[-(seq(1:skip_top))]
