@@ -41,7 +41,7 @@ extract_result_table <- function(sim_dir, sim_fi,
   lines <- readLines(in_fi)
   lines <- lines[-(seq(1:skip_top))]
   lines <- lines[seq(1:n_rows)]
-  if(verbose) print(lines[1])
+  if(verbose==TRUE){print(lines[1])}
   # write the table to a text file
   sink(ou_fi)
   for (i in seq(1:n_rows)){
