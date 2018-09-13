@@ -1,6 +1,6 @@
 Package: rgmrfilm
 Title: Processing of data from GMRFILM simulations using R
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Authors@R: person("Minter", "John", email= "jrminter@gmail.com", role = c("aut", "cre"))
 Maintainer: John Minter <jrminter@gmail.com>
 Description: Process GMRFILM output using R
@@ -15,7 +15,8 @@ Depends:
     pander,
     scales,
     dplyr,
-    tibble
+    tibble,
+    stringr
 Suggests:
     knitr,
     rmarkdown,

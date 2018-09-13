@@ -2,3 +2,5 @@
 
 export(extract_result_table)
 export(no_empty_values)
+export(remove_multiple_spaces)
+import(stringr)
